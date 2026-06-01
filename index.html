@@ -1,45 +1,147 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-<title>Lelabo52 Shop</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LelaboShop52</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+header {
+    background: #1c1c1c;
+    padding: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background: #1c1c1c;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.video {
+    width: 100%;
+    height: 180px;
+}
+
+.content {
+    padding: 15px;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #00ff88;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.desc {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.button {
+    display: block;
+    text-align: center;
+    background: #00ff88;
+    color: black;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #00cc6a;
+}
+</style>
+
 </head>
+
 <body>
 
-<h1>🛍️ Lelabo52 Shop</h1>
+<header>
+🛒 LelaboShop52
+</header>
 
-<p>Produit 1</p>
+<div class="container">
 
-<a href="https://t.me/lelabo52contacts">
-Commander
-</a>
+    <!-- PRODUIT 1 -->
+    <div class="card">
+        <iframe class="video"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        frameborder="0" allowfullscreen></iframe>
+
+        <div class="content">
+            <div class="title">Produit 1</div>
+            <div class="price">10€</div>
+            <div class="desc">Description du produit 1 ici. Très bon produit.</div>
+
+            <a class="button" href="https://t.me/lelabo52_bot?start=produit1">
+                Commander
+            </a>
+        </div>
+    </div>
+
+    <!-- PRODUIT 2 -->
+    <div class="card">
+        <iframe class="video"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        frameborder="0" allowfullscreen></iframe>
+
+        <div class="content">
+            <div class="title">Produit 2</div>
+            <div class="price">20€</div>
+            <div class="desc">Description du produit 2 ici.</div>
+
+            <a class="button" href="https://t.me/lelabo52_bot?start=produit2">
+                Commander
+            </a>
+        </div>
+    </div>
+
+    <!-- PRODUIT 3 -->
+    <div class="card">
+        <iframe class="video"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        frameborder="0" allowfullscreen></iframe>
+
+        <div class="content">
+            <div class="title">Produit 3</div>
+            <div class="price">30€</div>
+            <div class="desc">Description du produit 3 ici.</div>
+
+            <a class="button" href="https://t.me/lelabo52_bot?start=produit3">
+                Commander
+            </a>
+        </div>
+    </div>
+
+</div>
 
 </body>
 </html>
-</body><hr>
-
-<h2>Produit 2</h2>
-<p>Description produit 2</p>
-<p>39,99 €</p>
-<a href="https://t.me/lelabo52contacts">Commander</a>
-
-<hr>
-
-<h2>Produit 3</h2>
-<p>Description produit 3</p>
-<p>49,99 €</p>
-<a href="https://t.me/lelabo52contacts">Commander</a>
-
-<hr>
-
-<h2>Produit 4</h2>
-<p>Description produit 4</p>
-<p>59,99 €</p>
-<a href="https://t.me/lelabo52contacts">Commander</a>
-
-<hr>
-
-<h2>Produit 5</h2>
-<p>Description produit 5</p>
-<p>69,99 €</p>
-<a href="https://t.me/lelabo52contacts">Commander</a>
