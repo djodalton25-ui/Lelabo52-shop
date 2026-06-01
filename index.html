@@ -5,78 +5,102 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LelaboShop52</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0f0f0f;
+    font-family: 'Inter', sans-serif;
+    background: #0b0f17;
     color: white;
 }
 
+/* HEADER */
 header {
-    background: #1c1c1c;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
-    font-size: 22px;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
 }
 
+/* GRID */
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
+    padding: 30px;
+    max-width: 1100px;
+    margin: auto;
 }
 
+/* CARD */
 .card {
-    background: #1c1c1c;
-    width: 300px;
-    border-radius: 15px;
+    background: #121a2a;
+    border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: 0.3s;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
 }
 
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* VIDEO */
 .video {
     width: 100%;
     height: 180px;
 }
 
+/* CONTENT */
 .content {
     padding: 15px;
 }
 
 .title {
     font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .price {
-    color: #00ff88;
-    font-weight: bold;
-    margin: 10px 0;
+    margin-top: 8px;
+    font-size: 16px;
+    color: #00ffb3;
+    font-weight: 700;
 }
 
 .desc {
+    margin-top: 10px;
     font-size: 14px;
-    color: #ccc;
+    color: #b8c0d4;
+    line-height: 1.4;
 }
 
+/* BUTTON */
 .button {
     display: block;
-    text-align: center;
-    background: #00ff88;
-    color: black;
-    padding: 10px;
     margin-top: 15px;
-    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    border-radius: 12px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    color: white;
+    transition: 0.3s;
 }
 
 .button:hover {
-    background: #00cc6a;
+    opacity: 0.85;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 13px;
 }
 </style>
 
@@ -85,7 +109,7 @@ header {
 <body>
 
 <header>
-🛒 LelaboShop52
+🛒 LelaboShop52 - Boutique Officielle
 </header>
 
 <div class="container">
@@ -99,11 +123,8 @@ header {
         <div class="content">
             <div class="title">Produit 1</div>
             <div class="price">10€</div>
-            <div class="desc">Description du produit 1 ici. Très bon produit.</div>
-
-            <a class="button" href="https://t.me/lelabo52_bot?start=produit1">
-                Commander
-            </a>
+            <div class="desc">Produit premium avec qualité garantie. Parfait pour commencer.</div>
+            <a class="button" href="https://t.me/lelabo52_bot?start=produit1">Commander</a>
         </div>
     </div>
 
@@ -116,11 +137,8 @@ header {
         <div class="content">
             <div class="title">Produit 2</div>
             <div class="price">20€</div>
-            <div class="desc">Description du produit 2 ici.</div>
-
-            <a class="button" href="https://t.me/lelabo52_bot?start=produit2">
-                Commander
-            </a>
+            <div class="desc">Produit avancé avec fonctionnalités supplémentaires.</div>
+            <a class="button" href="https://t.me/lelabo52_bot?start=produit2">Commander</a>
         </div>
     </div>
 
@@ -133,15 +151,16 @@ header {
         <div class="content">
             <div class="title">Produit 3</div>
             <div class="price">30€</div>
-            <div class="desc">Description du produit 3 ici.</div>
-
-            <a class="button" href="https://t.me/lelabo52_bot?start=produit3">
-                Commander
-            </a>
+            <div class="desc">Produit premium + support + bonus inclus.</div>
+            <a class="button" href="https://t.me/lelabo52_bot?start=produit3">Commander</a>
         </div>
     </div>
 
 </div>
+
+<footer>
+© 2026 LelaboShop52 - Tous droits réservés
+</footer>
 
 </body>
 </html>
